@@ -57,11 +57,18 @@
     }
     .find{
       width: 15%;
+      .flex-icon{
+        margin-top: 5px;
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+      }
       p{
         color: $primary;
       }
 
     }
+    
   }
 }
 
