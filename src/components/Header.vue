@@ -22,7 +22,8 @@
         <ul class="flex-ul">
           <li><a href=""> <i class="fa-regular fa-user"></i> </a></li>
           <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-          <li><a href=""><font-awesome-icon icon="fa-solid fa-bag-shopping" /></a></li>
+          <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+          
         </ul>
       </nav>
     </div>
@@ -61,6 +62,16 @@
     }
     img{
       width: 20%;
+    }
+    .nav-icon{
+      display: flex;
+      justify-content: flex-end;
+      width: 40%;
+      .flex-ul{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 
