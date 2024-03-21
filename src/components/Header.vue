@@ -15,7 +15,22 @@ export default {
           target:'Bambino',
           lick:'#',
         },
+      ],
+      icons:[
+        {
+          icon:'fa-regular fa-user',
+          lick:'#',
+        },
+        {
+          icon:'fa-regular fa-heart',
+          lick:'#',
+        },
+        {
+          icon:'fa-solid fa-bag-shopping',
+          lick:'#',
+        }
       ]
+
     }
   }
 }
@@ -40,9 +55,10 @@ export default {
       </div>
       <nav class="nav-icon">
         <ul class="flex-ul">
-          <li><a href=""> <i class="fa-regular fa-user"></i> </a></li>
-          <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-          <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+          <li
+          v-for="(element,index) in icons" :key="index"
+          ><a :href="element.link"> <i :class="element.icon"></i> </a></li>
+          
           
         </ul>
       </nav>
