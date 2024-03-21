@@ -10,6 +10,10 @@
   
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+div{
+  height: 500px;
+}
 
 </style>

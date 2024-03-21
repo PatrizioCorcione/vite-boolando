@@ -38,28 +38,27 @@
 @import '../assets/scss/partials/general';
 @import '../assets/scss/partials/variables'; 
 
-  .header{
+.header{
+  height: 60px;
+  top: 0;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  background-color: $headerBack;
+  .container{
+    margin-bottom: 50px;
     height: 60px;
-    top: 0;
-    z-index: 999;
-    position: fixed;
-    width: 100%;
-    background-color: $headerBack;
-    .container{
-      margin-bottom: 50px;
-      height: 60px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      .nav-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav-text{
       width: 40%;
       .flex-ul-txt{
         width: 40%;
         display: flex;
         justify-content: space-between;
+      }
     }
-    }
-    
     img{
       width: 20%;
     }

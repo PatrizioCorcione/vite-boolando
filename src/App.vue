@@ -14,13 +14,13 @@ export default{
 
 <template>
 
-  <div>
+  
 
-   <Header/>
-   <Main/>
-   <Footer/>
+  <Header/>
+  <Main/>
+  <Footer/>
 
-  </div>
+  
   
 </template>
 
