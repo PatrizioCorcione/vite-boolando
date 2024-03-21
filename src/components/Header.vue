@@ -22,7 +22,7 @@
         <ul class="flex-ul">
           <li><a href=""> <i class="fa-regular fa-user"></i> </a></li>
           <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-          <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+          <li><a href=""><font-awesome-icon icon="fa-solid fa-bag-shopping" /></a></li>
         </ul>
       </nav>
     </div>
