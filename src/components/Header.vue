@@ -1,5 +1,24 @@
 <script>
-
+export default {
+  data(){
+    return{
+      size:[
+        {
+          target:'Uomo',
+          lick:'#',
+        },
+        {
+          target:'Donna',
+          lick:'#',
+        },
+        {
+          target:'Bambino',
+          lick:'#',
+        },
+      ]
+    }
+  }
+}
 
 
 </script>
@@ -10,9 +29,10 @@
     <div class="container flex-top">
       <nav class="nav-text">
         <ul class="flex-ul-txt">
-          <li><a class="white" href="">Donna</a></li>
-          <li><a class="white" href="">Uomo</a></li>
-          <li><a class="white" href="">Bambini</a></li>
+          <li
+          v-for="(element,index) in size " :key="index"
+          ><a class="white" :href="element.link">{{ element.target }}</a></li>
+         
         </ul>
       </nav>
       <div class="logo">
