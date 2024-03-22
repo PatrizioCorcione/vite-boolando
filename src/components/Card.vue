@@ -16,8 +16,9 @@ export default{
         <i id="heart" class="fa-solid fa-heart"></i>
       
         <div class="labels">
-          <span class="discount">-50%</span>
-          <span class="quality">Sostenibilita</span>
+          <span
+          v-for=" label in dress.labels" :key=label
+           :class="label.type">{{ label.value }}</span>
         </div>
       </div>
       <div class="text">
@@ -66,7 +67,7 @@ export default{
        padding: 1px 4px;
         background-color: $priceDiscount;
       }
-      .quality{
+      .tag{
         font-size: 0.9rem;
         width: 8%;
         color: $primary;
