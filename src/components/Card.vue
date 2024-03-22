@@ -1,6 +1,13 @@
-
-
 <script>
+export default{
+  data(){
+    props:{
+      
+
+    }
+  }
+}
+
 </script>
 <template>
   
@@ -8,7 +15,7 @@
       <div class="card">
         <img src="/src/assets/img/1.webp" alt="">
         <img class="cardb" src="/src/assets/img/1b.webp" alt="">
-        <i id="heart" class="fa-sharp fa-regular fa-heart"></i>
+        <i id="heart" class="fa-solid fa-heart"></i>
       
         <div class="labels">
           <span class="discount">-50%</span>
@@ -26,11 +33,17 @@
   
 </template>
 <style lang="scss">
+
+@import '../assets/scss/partials/_variables.scss';
+
 .cards{
   margin-top: 120px;
   margin-bottom: 35px;
   width: 32%;
   .card{
+    &:hover .cardb{
+      display: block;
+    }
     position: relative;
     .cardb{
       display: none;
@@ -39,7 +52,7 @@
     }
     #heart{
       padding: 20px;
-      background-color: rgb(255, 255, 255);
+      background-color: $primary;
       right: 0;
       top: 20px;
       position: absolute;
@@ -51,26 +64,26 @@
       .discount{
         font-size: 0.9rem;
        width: 4%;
-       color: white;
+       color: $primary;
        padding: 1px 4px;
-       background-color: red;
+       background-color: $priceDiscount;
       }
       .quality{
         font-size: 0.9rem;
         width: 8%;
-        color: white;
+        color: $primary;
         padding: 1px 4px;
-        background-color: rgb(0, 220, 77);
+        background-color: $type;
       }
     }
   }
   .red{
-    color: red;
+    color: $priceDiscount;
   }
   .gray-line{
     margin-left: 5px;
     text-decoration: line-through;
-    color: gray;
+    color: $priceOverline;
   }
 }
 

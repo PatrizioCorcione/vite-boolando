@@ -1,9 +1,16 @@
 <script>
 import Card from '../components/Card.vue';
+import {products} from '../src/assets/db.json';
 export default{
   components:{
     Card,
-  }
+  },
+  data() {
+    return {
+      products
+      
+    }
+  },
 }
 
 </script>
