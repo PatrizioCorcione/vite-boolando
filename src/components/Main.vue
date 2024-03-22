@@ -1,5 +1,5 @@
 <script>
-import Card from '../components/Card.vue';
+import Card from './Card.vue';
 import {products} from '../assets/db.json/db.json';
 export default{
   components:{
@@ -22,8 +22,9 @@ export default{
       <Card
         v-for="product in this.products"
         :key="product.id"
-        :imgFront="product.frontImage"
-        :imgBack="product.backImage"
+        :dress="product"
+        
+        
       />
     </main>
   </div>

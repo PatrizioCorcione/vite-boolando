@@ -1,9 +1,9 @@
 <script>
 export default{
     props:{
-    imgFront: String,
-    imgBack: String,
-  }
+    dress: Object,
+  },
+ 
 }
 
 </script>
@@ -11,8 +11,8 @@ export default{
   
     <div class="cards">
       <div class="card">
-        <img :src="`../assets/img/${frontImage}`" alt="">
-        <img class="cardb" :src="`../assets/img/${backImage}`" alt="">
+        <img :src="`/img/${dress.frontImage}`" alt="">
+        <img class="cardb" :src="`/img/${dress.backImage}`" alt="">
         <i id="heart" class="fa-solid fa-heart"></i>
       
         <div class="labels">
@@ -21,10 +21,10 @@ export default{
         </div>
       </div>
       <div class="text">
-        <p>Levi's</p>
-        <strong>RELAXED FIT TEE UNISEX</strong>
+        <p>{{dress.brand}}</p>
+        <strong>{{dress.name}}</strong>
         <div class="marc">
-          <span class="red">14.99 &#8364;</span><span class="margin-price gray-line">29.99 &#8364;</span>
+          <span class="red"> {{dress.price}} &#8364;</span>
         </div>
       </div>
     </div>  

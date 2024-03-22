@@ -51,7 +51,7 @@ export default {
         </ul>
       </nav>
       <div class="logo">
-        <img src="../assets/img/boolean-logo.png" alt="Boolando">
+        <img src="/img/boolean-logo.png" alt="Boolando">
       </div>
       <nav class="nav-icon">
         <ul class="flex-ul">
