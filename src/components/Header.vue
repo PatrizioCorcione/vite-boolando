@@ -72,6 +72,8 @@ export default {
 
 <style lang="scss" scoped>
 
+@use '../assets/scss/partials/mixin' as *;
+
 @import '../assets/scss/partials/general';
 @import '../assets/scss/partials/variables'; 
 
@@ -97,9 +99,7 @@ export default {
       }
     }
     .logo{
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include centerFlex();
       img{
       width: 20%;
     }
