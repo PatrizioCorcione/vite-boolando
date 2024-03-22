@@ -1,10 +1,8 @@
 <script>
 export default{
-  data(){
     props:{
-      
-
-    }
+    imgFront: String,
+    imgBack: String,
   }
 }
 
@@ -13,8 +11,8 @@ export default{
   
     <div class="cards">
       <div class="card">
-        <img src="/src/assets/img/1.webp" alt="">
-        <img class="cardb" src="/src/assets/img/1b.webp" alt="">
+        <img :src="`../assets/img/${frontImage}`" alt="">
+        <img class="cardb" :src="`../assets/img/${backImage}`" alt="">
         <i id="heart" class="fa-solid fa-heart"></i>
       
         <div class="labels">
@@ -34,7 +32,7 @@ export default{
 </template>
 <style lang="scss">
 
-@import '../assets/scss/partials/_variables.scss';
+@import '../assets/scss/partials/variables'; 
 
 .cards{
   margin-top: 120px;
@@ -66,7 +64,7 @@ export default{
        width: 4%;
        color: $primary;
        padding: 1px 4px;
-       background-color: $priceDiscount;
+        background-color: $priceDiscount;
       }
       .quality{
         font-size: 0.9rem;
