@@ -17,7 +17,7 @@ export default{
       
         <div class="labels">
           <span
-          v-for=" label in dress.labels" :key=label
+          v-for=" label in dress.badges" :key=label
            :class="label.type">{{ label.value }}</span>
         </div>
       </div>
