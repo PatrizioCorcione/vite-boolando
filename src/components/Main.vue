@@ -23,8 +23,6 @@ export default{
         v-for="product in this.products"
         :key="product.id"
         :dress="product"
-        
-        
       />
     </main>
   </div>
